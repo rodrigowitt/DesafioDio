@@ -1,0 +1,57 @@
+
++---------------+
+|      Clientes      |
++---------------+
+| ID (PK)         |
+| Nome             |
+| E-mail           |
+| Senha            |
+| Tipo (PJ/PF)    |
+| CPF/CNPJ        |
+| Endereço        |
++---------------+
+
++---------------+
+|      Pagamentos     |
++---------------+
+| ID (PK)         |
+| ID Cliente (FK) |
+| Forma de Pagamento|
+| Data de Pagamento |
++---------------+
+
++---------------+
+|      Pedidos      |
++---------------+
+| ID (PK)         |
+| ID Cliente (FK) |
+| Data do Pedido  |
+| Total do Pedido  |
++---------------+
+
++---------------+
+|      Entregas     |
++---------------+
+| ID (PK)         |
+| ID Pedido (FK)  |
+| Status da Entrega|
+| Código de Rastreio|
++---------------+
+
++---------------+
+|      Produtos     |
++---------------+
+| ID (PK)         |
+| Nome do Produto  |
+| Descrição do Produto|
+| Preço do Produto  |
++---------------+
+
++---------------+
+| Itens do Pedido  |
++---------------+
+| ID (PK)         |
+| ID Pedido (FK)  |
+| ID Produto (FK) |
+| Quantidade do Produto|
++---------------+
